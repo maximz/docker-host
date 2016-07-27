@@ -1,0 +1,1 @@
+PATH=/home/maxim/py3env/bin:$PATH pandoc -S -s -f markdown -t latex --filter pandoc-fignos --filter=pandoc-citeproc -o public_docker_host_config.pdf -V mainfont:Garamond --latex-engine xelatex --listings -H .listings_setup.tex public_docker_host_config.md;
